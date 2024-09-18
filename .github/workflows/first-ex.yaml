@@ -6,7 +6,7 @@ jobs:
   first_job:
     runs-on : ubuntu-latest
     steps:
-      - name: Create File
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name : Welcome Message
