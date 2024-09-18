@@ -1,0 +1,20 @@
+name : My first Workflow
+
+on : push
+
+jobs:
+  first_job:
+    runs-on : ubuntu-latest
+    steps:
+      - name : Welcome Message
+        run: echo "My first Guthub Action Job"
+
+      - name: List files
+        run : ls
+      
+      - name: Read File
+        run: cat README.md
+
+      - name: Create File
+        run: touch first_file.txt
+
